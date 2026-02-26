@@ -1,249 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Instagram Growth Blueprint</title>
-  <meta name="description" content="Get the Instagram Growth Blueprint. Instant access by email." />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>View | Instagram Growth Blueprint</title>
 
-  <!-- Brevo required stylesheet -->
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<!-- Brevo Styles -->
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 
-  <style>
-    :root{
-      --bg:#0b0f1a;
-      --card:rgba(255,255,255,.06);
-      --border:rgba(255,255,255,.12);
-      --text:#ffffff;
-      --muted:rgba(255,255,255,.75);
-      --accent:#2BB2FC;
-      --accentText:#001018;
-      --radius:18px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      background:radial-gradient(1200px 600px at 20% 0%, rgba(43,178,252,.25), transparent 60%),
-                 radial-gradient(900px 500px at 90% 10%, rgba(120,99,255,.20), transparent 55%),
-                 var(--bg);
-      color:var(--text);
-    }
-    .wrap{max-width:980px;margin:0 auto;padding:70px 20px}
-    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}
-    @media (max-width: 900px){.grid{grid-template-columns:1fr}}
-    .hero{
-      padding:26px;
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-    }
-    h1{margin:0 0 10px 0;font-size:44px;line-height:1.05}
-    .sub{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
-    .bullets{margin:18px 0 0 0;padding:0;list-style:none;display:grid;gap:10px}
-    .bullets li{
-      background:rgba(255,255,255,.04);
-      border:1px solid rgba(255,255,255,.10);
-      padding:12px 12px;
-      border-radius:14px;
-      color:rgba(255,255,255,.88);
-    }
-    .note{margin-top:14px;color:var(--muted);font-size:13px}
-    .formCard{
-      padding:22px;
-      background:rgba(255,255,255,.08);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-    }
-
-    /* Make Brevo elements match the site */
-    #sib-container{
-      background:transparent !important;
-      border:0 !important;
-      max-width:100% !important;
-      text-align:left !important;
-    }
-    .sib-form{background:transparent !important}
-    .entry__label{color:var(--text) !important}
-    .input{
-      width:100% !important;
-      border-radius:14px !important;
-      border:1px solid rgba(255,255,255,.18) !important;
-      background:rgba(0,0,0,.25) !important;
-      color:var(--text) !important;
-      padding:12px 12px !important;
-    }
-    .sib-form-block__button{
-      width:100% !important;
-      border-radius:14px !important;
-      background:var(--accent) !important;
-      color:var(--accentText) !important;
-      font-weight:800 !important;
-      padding:12px 14px !important;
-    }
-    .footerLinks{
-      margin-top:18px;
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      color:var(--muted);
-      font-size:13px;
-    }
-    .footerLinks a{color:rgba(255,255,255,.75);text-decoration:none}
-    .footerLinks a:hover{text-decoration:underline}
-
-    /* --- Brevo form hard overrides --- */
-#sib-form-container, .sib-form, #sib-container { 
-  background: transparent !important; 
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
-#sib-container * {
-  box-sizing: border-box !important;
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg,#0a1f2e,#111c2b,#1d1532);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-#sib-container .entry__label{
-  font-size: 18px !important;
-  font-weight: 800 !important;
-  color: #fff !important;
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  min-width: 320px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+p {
+  opacity: .85;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 14px;
+  padding-left: 28px;
+  position: relative;
+}
+
+ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2BB2FC;
+  font-weight: bold;
+}
+
+small {
+  opacity: .6;
+}
+
+/* ----- BREVO OVERRIDES ----- */
+
+.sib-form,
+#sib-form-container,
+#sib-container {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+#sib-container .entry__label {
+  color: white !important;
+  font-weight: 700 !important;
   margin-bottom: 10px !important;
-  display: block !important;
-}
-
-#sib-container .entry__field{
-  margin-top: 10px !important;
 }
 
 #sib-container input[type="text"],
-#sib-container input[type="email"]{
+#sib-container input[type="email"],
+#sib-container .input {
   width: 100% !important;
   height: 54px !important;
-  border-radius: 14px !important;
-  border: 1px solid rgba(255,255,255,.18) !important;
   background: rgba(0,0,0,.25) !important;
-  color: #fff !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+  color: white !important;
   padding: 12px 14px !important;
-  outline: none !important;
 }
 
-#sib-container input::placeholder{
-  color: rgba(255,255,255,.55) !important;
+#sib-container input::placeholder {
+  color: rgba(255,255,255,.5) !important;
 }
 
-#sib-container .sib-form-block__button{
+#sib-container .sib-form-block__button {
   width: 100% !important;
   height: 54px !important;
   border-radius: 14px !important;
   background: #2BB2FC !important;
   color: #001018 !important;
   font-weight: 900 !important;
-  letter-spacing: .5px !important;
-  border: 0 !important;
-  margin-top: 14px !important;
+  border: none !important;
+  margin-top: 16px !important;
 }
 
-#sib-container .sib-form-message-panel{
-  max-width: 100% !important;
-  border-radius: 14px !important;
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 14px;
+  opacity: .5;
 }
-  </style>
+</style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="grid">
-      <div class="hero">
-        <h1>Get the Instagram Growth Blueprint</h1>
-        <p class="sub">The exact system we use to generate <b>1,000 targeted followers in 60 days</b> — and turn attention into leads.</p>
 
-        <ul class="bullets">
-          <li>✅ Content framework (what to post + why it works)</li>
-          <li>✅ Posting cadence + execution checklist</li>
-          <li>✅ Simple lead-capture setup to convert viewers into calls</li>
-        </ul>
+<div class="wrapper">
 
-        <p class="note">No spam. Unsubscribe anytime.</p>
-      </div>
+  <!-- LEFT CARD -->
+  <div class="card">
+    <h1>Get the Instagram Growth Blueprint</h1>
+    <p>The exact system we use to generate <strong>1,000 targeted followers in 30 days</strong> — and turn attention into leads.</p>
 
-      <div class="formCard">
-        <!-- Brevo form embed (kept required pieces, cleaned styling) -->
-        <div class="sib-form" style="text-align:left;">
-          <div id="sib-form-container" class="sib-form-container">
+    <ul>
+      <li>Content framework (what to post + why it works)</li>
+      <li>Posting cadence + execution checklist</li>
+      <li>Simple lead-capture setup to convert viewers into calls</li>
+    </ul>
 
-            <div id="error-message" class="sib-form-message-panel" style="display:none;">
-              <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
-              </div>
-            </div>
-
-            <div id="success-message" class="sib-form-message-panel" style="display:none;">
-              <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                <span class="sib-form-message-panel__inner-text">Success. Your blueprint is on its way.</span>
-              </div>
-            </div>
-
-            <div id="sib-container" class="sib-container--large sib-container--vertical">
-              <form id="sib-form" method="POST"
-                action="https://9c0415ce.sibforms.com/serve/MUIFAMWJcrCRnPkt2s_CRE8cmLrWyhvVExOu6kms3zLWovmeYKj-dMcgCZ3HcwXaMaWbcmwrLnb3Pwh6L8pGkNW9PXlmwKjtIGZDp2d0GCzRsbAeCjhSziSrZWQiQJZlNo0eK-t8vpSpYUsL2Uakf5euLQGrEMRsLC9m1-yRzaZsov4tVkL2e0Le1e1zhTR36NNKCqKFe3D4LYAz0Q=="
-                data-type="subscription">
-
-                <div class="sib-input sib-form-block">
-                  <label class="entry__label" for="EMAIL" data-required="*">Where should we send the blueprint?</label>
-                  <div class="entry__field">
-                    <input class="input" type="email" id="EMAIL" name="EMAIL" placeholder="you@email.com" required>
-                  </div>
-                  <label class="entry__error entry__error--primary"></label>
-                </div>
-
-                <!-- Invisible reCAPTCHA -->
-                <div class="g-recaptcha"
-                  data-sitekey="6Lco_XgsAAAAAFZlSUnHWGrUlJikNpdKbKu68Imp"
-                  data-callback="invisibleCaptchaCallback"
-                  data-size="invisible"></div>
-
-                <div class="sib-form-block" style="margin-top:12px;">
-                  <button class="sib-form-block__button sib-form-block__button-with-loader" type="submit">
-                    GET INSTANT ACCESS
-                  </button>
-                </div>
-
-                <input type="text" name="email_address_check" value="" class="input--hidden">
-                <input type="hidden" name="locale" value="en">
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- /Brevo form -->
-      </div>
-    </div>
-
-    <div class="footerLinks">
-      <span>© <script>document.write(new Date().getFullYear())</script> View</span>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/thank-you.html">Thank you page</a>
-      <a href="/instagram-blueprint.pdf">PDF link</a>
-    </div>
+    <small>No spam. Unsubscribe anytime.</small>
   </div>
 
-  <!-- Brevo required scripts -->
-  <script>
-    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-    window.LOCALE = 'en';
-    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
-      "The information provided is invalid. Please review the field format and try again.";
-    window.REQUIRED_ERROR_MESSAGE = "Please enter your email to continue.";
-    window.GENERIC_INVALID_MESSAGE =
-      "The information provided is invalid. Please review the field format and try again.";
-    window.translation = { common: {
-      selectedList: '{quantity} list selected',
-      selectedLists: '{quantity} lists selected',
-      selectedOption: '{quantity} selected',
-      selectedOptions: '{quantity} selected',
-    }};
-    var AUTOHIDE = Boolean(0);
-  </script>
-  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+  <!-- RIGHT CARD -->
+  <div class="card">
+
+    <div id="sib-form-container">
+      <div id="sib-container">
+
+        <form id="sib-form" method="POST"
+          action="https://9c0415ce.sibforms.com/serve/MUIFAMWJcrCRnPkt2s_CRE8cmLrWyhvVExOu6kms3zLWovmeYKj-dMcgCZ3HcwXaMaWbcmwrLnb3Pwh6L8pGkNW9PXlmwKjtIGZDp2d0GCzRsbAeCjhSziSrZWQiQJZlNo0eK-t8vpSpYUsL2Uakf5euLQGrEMRsLC9m1-yRzaZsov4tVkL2e0Le1e1zhTR36NNKCqKFe3D4LYAz0Q=="
+          data-type="subscription">
+
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <label class="entry__label" for="EMAIL">Where should we send the blueprint?</label>
+              <div class="entry__field">
+                <input class="input"
+                  type="email"
+                  id="EMAIL"
+                  name="EMAIL"
+                  placeholder="you@email.com"
+                  required />
+              </div>
+            </div>
+          </div>
+
+          <!-- Invisible reCAPTCHA -->
+          <div class="g-recaptcha"
+            data-sitekey="6LcBBXksAAAAAJIGBihjeNjTOtoxPgsMAQSBMgs0"
+            data-callback="invisibleCaptchaCallback"
+            data-size="invisible">
+          </div>
+
+          <div class="sib-form-block">
+            <button class="sib-form-block__button"
+              form="sib-form"
+              type="submit">
+              GET INSTANT ACCESS
+            </button>
+          </div>
+
+          <input type="hidden" name="locale" value="en">
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+© 2026 View • Privacy • Terms
+</footer>
+
+<!-- Brevo Script -->
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+<!-- reCAPTCHA Script -->
+<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+
 </body>
 </html>
-
-
