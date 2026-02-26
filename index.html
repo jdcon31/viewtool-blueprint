@@ -91,6 +91,60 @@
     }
     .footerLinks a{color:rgba(255,255,255,.75);text-decoration:none}
     .footerLinks a:hover{text-decoration:underline}
+
+    /* --- Brevo form hard overrides --- */
+#sib-form-container, .sib-form, #sib-container { 
+  background: transparent !important; 
+}
+
+#sib-container * {
+  box-sizing: border-box !important;
+}
+
+#sib-container .entry__label{
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  margin-bottom: 10px !important;
+  display: block !important;
+}
+
+#sib-container .entry__field{
+  margin-top: 10px !important;
+}
+
+#sib-container input[type="text"],
+#sib-container input[type="email"]{
+  width: 100% !important;
+  height: 54px !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(255,255,255,.18) !important;
+  background: rgba(0,0,0,.25) !important;
+  color: #fff !important;
+  padding: 12px 14px !important;
+  outline: none !important;
+}
+
+#sib-container input::placeholder{
+  color: rgba(255,255,255,.55) !important;
+}
+
+#sib-container .sib-form-block__button{
+  width: 100% !important;
+  height: 54px !important;
+  border-radius: 14px !important;
+  background: #2BB2FC !important;
+  color: #001018 !important;
+  font-weight: 900 !important;
+  letter-spacing: .5px !important;
+  border: 0 !important;
+  margin-top: 14px !important;
+}
+
+#sib-container .sib-form-message-panel{
+  max-width: 100% !important;
+  border-radius: 14px !important;
+}
   </style>
 </head>
 
@@ -191,3 +245,4 @@
   <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 </body>
 </html>
+
